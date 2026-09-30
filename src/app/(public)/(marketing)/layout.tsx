@@ -1,4 +1,3 @@
-
 import Footer from "@/components/layout/public/Footer";
 import Navbar from "@/components/layout/public/Navbar";
 import React, { ReactNode } from "react";

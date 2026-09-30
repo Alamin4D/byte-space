@@ -1,8 +1,14 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { Palette, Code2, Monitor, Building2, Megaphone, Camera } from "lucide-react";
-
+import {
+  Palette,
+  Code2,
+  Monitor,
+  Building2,
+  Megaphone,
+  Camera,
+} from "lucide-react";
 
 const pathsData = [
   { id: 1, title: "Design", icon: Palette },
@@ -22,7 +28,6 @@ export default function LearningPaths() {
     },
   };
 
-
   const cardVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
@@ -34,8 +39,7 @@ export default function LearningPaths() {
 
   return (
     <section className="w-full bg-white text-gray-900 py-20 px-4 md:px-8 flex flex-col items-center border-t border-gray-50">
-      
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -46,11 +50,14 @@ export default function LearningPaths() {
           Explore Diverse Learning Paths at Bytespace
         </h2>
         <p className="mt-4 text-sm md:text-base text-gray-400 max-w-2xl mx-auto font-normal leading-relaxed">
-          At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories.
+          At Bytespace, we believe in empowering individuals through knowledge.
+          Our diverse range of courses spans various fields, ensuring there's
+          something for everyone. Unleash your potential and explore our
+          carefully curated categories.
         </p>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -63,9 +70,10 @@ export default function LearningPaths() {
             <motion.div
               key={path.id}
               variants={cardVariants}
-              whileHover={{ 
-                y: -8, 
-                boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05)" 
+              whileHover={{
+                y: -8,
+                boxShadow:
+                  "0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05)",
               }}
               className="bg-white border-2 border-gray-200 rounded-3xl p-6 flex flex-col items-center justify-center text-center aspect-square cursor-pointer transition-all duration-300 group"
             >
@@ -80,7 +88,6 @@ export default function LearningPaths() {
           );
         })}
       </motion.div>
-
     </section>
   );
 }

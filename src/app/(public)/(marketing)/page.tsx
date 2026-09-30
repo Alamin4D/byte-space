@@ -10,12 +10,12 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <TrustedLogos/>
-      <CourseSection/>
-      <LearningPaths/>
-      <FeaturesSplit/>
-      <CreatorCTA/>
-      <Testimonials/>
+      <TrustedLogos />
+      <CourseSection />
+      <LearningPaths />
+      <FeaturesSplit />
+      <CreatorCTA />
+      <Testimonials />
     </div>
   );
 }

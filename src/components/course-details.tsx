@@ -39,21 +39,21 @@ export default function CourseDetails() {
   const images = [
     {
       id: 1,
-      image: "/images/Rectangle.png"
+      image: "/images/Rectangle.png",
     },
     {
       id: 2,
-      image: "/images/Rectangle-1.png"
+      image: "/images/Rectangle-1.png",
     },
     {
       id: 3,
-      image: "/images/Rectangle-2.png"
+      image: "/images/Rectangle-2.png",
     },
     {
       id: 4,
-      image: "/images/Rectangle-2.png"
-    }
-  ]
+      image: "/images/Rectangle-2.png",
+    },
+  ];
 
   // Course inclusion features
   const inclusionFeatures = [
@@ -157,7 +157,13 @@ export default function CourseDetails() {
             <div className="lg:col-span-7 hidden lg:flex relative overflow-hidden flex items-center justify-center group min-h-[260px] sm:min-h-[340px]">
               {/* Video Background */}
               <div className="absolute" />
-              <Image className="w-[600px] h-[600px] object-contain" src="/images/video.png" alt="" width={500} height={500}/>
+              <Image
+                className="w-[600px] h-[600px] object-contain"
+                src="/images/video.png"
+                alt=""
+                width={500}
+                height={500}
+              />
             </div>
 
             {/* Desktop Spacer */}
@@ -168,7 +174,6 @@ export default function CourseDetails() {
 
       <div className="w-full bg-white text-gray-900 px-4 sm:px-6 md:px-12 lg:px-24 flex justify-center relative">
         <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative">
-
           <div className="lg:col-span-7 flex flex-col space-y-8 pt-12 pb-24">
             {/* Tabs */}
             <div className="flex items-center gap-2 bg-gray-50 p-1.5 rounded-full w-fit border border-gray-100">
@@ -246,10 +251,13 @@ export default function CourseDetails() {
 
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                       {images.map((image) => (
-                        <div
-                          key={image.id}
-                        >
-                          <Image src={image.image} alt="" width={400} height={400}/>
+                        <div key={image.id}>
+                          <Image
+                            src={image.image}
+                            alt=""
+                            width={400}
+                            height={400}
+                          />
                         </div>
                       ))}
                     </div>
@@ -279,7 +287,6 @@ export default function CourseDetails() {
                   </div>
                 </motion.div>
               )}
-
 
               {activeTab === "Lessons" && (
                 <motion.div
@@ -319,7 +326,6 @@ export default function CourseDetails() {
                 </motion.div>
               )}
 
-
               {activeTab === "Reviews" && (
                 <motion.div
                   key="reviews"
@@ -348,7 +354,6 @@ export default function CourseDetails() {
               )}
             </AnimatePresence>
           </div>
-
 
           <div className="lg:col-span-4 w-full flex flex-col space-y-6 pt-12 lg:pt-0 transform lg:-translate-y-[620px] lg:sticky lg:top-6 z-30 pb-16 lg:pb-0">
             <div className="bg-white border border-gray-100 text-gray-900 rounded-[2.5rem] p-6 sm:p-8 shadow-2xl flex flex-col min-h-[680px]">
@@ -387,7 +392,6 @@ export default function CourseDetails() {
                   99 more videos
                 </span>
               </div>
-
 
               <div className="mt-8 pt-6 border-t border-gray-100 space-y-5">
                 <div className="space-y-1">
@@ -435,12 +439,16 @@ export default function CourseDetails() {
                 </div>
               </div>
 
-
               <div className="mt-8 pt-6 border-t border-gray-100 space-y-4">
                 <div className="flex items-center gap-3.5">
                   {/* Creator Avatar */}
                   <div className="relative w-12 h-12 rounded-full overflow-hidden bg-pink-100 shrink-0 ring-2 ring-blue-50">
-                    <Image src="/images/studio.png" alt="" width={50} height={50}/>
+                    <Image
+                      src="/images/studio.png"
+                      alt=""
+                      width={50}
+                      height={50}
+                    />
                   </div>
 
                   <div>

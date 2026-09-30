@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useMemo, useState } from "react";
@@ -14,8 +13,6 @@ import {
   SlidersHorizontal,
 } from "lucide-react";
 import CourseCard from "./course-card";
-
-
 
 const allCoursesMockData = [
   {
@@ -92,7 +89,6 @@ const allCoursesMockData = [
   },
 ];
 
-
 const categories = [
   "All",
   "Featured",
@@ -128,7 +124,6 @@ export default function CourseSearchFilter() {
     },
   };
 
-
   const filteredCourses = useMemo(() => {
     return allCoursesMockData.filter((course) => {
       const matchesCategory =
@@ -149,7 +144,7 @@ export default function CourseSearchFilter() {
   // Pagination
   const totalPages = Math.max(
     1,
-    Math.ceil(filteredCourses.length / ITEMS_PER_PAGE)
+    Math.ceil(filteredCourses.length / ITEMS_PER_PAGE),
   );
 
   const sanitizedCurrentPage = Math.min(currentPage, totalPages);
@@ -157,22 +152,15 @@ export default function CourseSearchFilter() {
   const paginatedCourses = useMemo(() => {
     const startIndex = (sanitizedCurrentPage - 1) * ITEMS_PER_PAGE;
 
-    return filteredCourses.slice(
-      startIndex,
-      startIndex + ITEMS_PER_PAGE
-    );
+    return filteredCourses.slice(startIndex, startIndex + ITEMS_PER_PAGE);
   }, [filteredCourses, sanitizedCurrentPage]);
-
 
   const handleCategoryChange = (category: string) => {
     setActiveCategory(category);
     setCurrentPage(1);
   };
 
-
-  const handleSearchChange = (
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => {
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(event.target.value);
     setCurrentPage(1);
   };
@@ -291,7 +279,6 @@ export default function CourseSearchFilter() {
           </motion.div>
         </div>
       </div>
-      
 
       <div className="w-full max-w-6xl px-4 md:px-8 pb-12">
         <AnimatePresence mode="popLayout">
@@ -341,46 +328,41 @@ export default function CourseSearchFilter() {
             <button
               type="button"
               disabled={sanitizedCurrentPage === 1}
-              onClick={() =>
-                setCurrentPage((prev) => Math.max(prev - 1, 1))
-              }
+              onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
               className="p-2 rounded-full border border-gray-200 text-gray-600 hover:bg-gray-50 disabled:opacity-40 disabled:hover:bg-transparent transition-colors focus:outline-none cursor-pointer disabled:cursor-not-allowed"
               aria-label="Previous page"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
 
-            {Array.from(
-              { length: totalPages },
-              (_, index) => index + 1
-            ).map((pageNum) => {
-              const isPageActive = sanitizedCurrentPage === pageNum;
+            {Array.from({ length: totalPages }, (_, index) => index + 1).map(
+              (pageNum) => {
+                const isPageActive = sanitizedCurrentPage === pageNum;
 
-              return (
-                <button
-                  key={pageNum}
-                  type="button"
-                  onClick={() => setCurrentPage(pageNum)}
-                  className={`w-9 h-9 rounded-full text-sm font-bold flex items-center justify-center transition-all ${
-                    isPageActive
-                      ? "bg-[#0E52FE] text-white shadow-md shadow-blue-500/20"
-                      : "bg-white border border-gray-200 text-gray-600 hover:bg-gray-50"
-                  }`}
-                  aria-label={`Go to page ${pageNum}`}
-                  aria-current={isPageActive ? "page" : undefined}
-                >
-                  {pageNum}
-                </button>
-              );
-            })}
+                return (
+                  <button
+                    key={pageNum}
+                    type="button"
+                    onClick={() => setCurrentPage(pageNum)}
+                    className={`w-9 h-9 rounded-full text-sm font-bold flex items-center justify-center transition-all ${
+                      isPageActive
+                        ? "bg-[#0E52FE] text-white shadow-md shadow-blue-500/20"
+                        : "bg-white border border-gray-200 text-gray-600 hover:bg-gray-50"
+                    }`}
+                    aria-label={`Go to page ${pageNum}`}
+                    aria-current={isPageActive ? "page" : undefined}
+                  >
+                    {pageNum}
+                  </button>
+                );
+              },
+            )}
 
             <button
               type="button"
               disabled={sanitizedCurrentPage === totalPages}
               onClick={() =>
-                setCurrentPage((prev) =>
-                  Math.min(prev + 1, totalPages)
-                )
+                setCurrentPage((prev) => Math.min(prev + 1, totalPages))
               }
               className="p-2 rounded-full border border-gray-200 text-gray-600 hover:bg-gray-50 disabled:opacity-40 disabled:hover:bg-transparent transition-colors focus:outline-none cursor-pointer disabled:cursor-not-allowed"
               aria-label="Next page"

@@ -2,16 +2,10 @@
 
 import React, { useMemo, useState } from "react";
 import { AnimatePresence, motion, Variants } from "framer-motion";
-import {
-  ArrowUpDown,
-  BarChart4,
-  Grid,
-  SlidersHorizontal,
-} from "lucide-react";
+import { ArrowUpDown, BarChart4, Grid, SlidersHorizontal } from "lucide-react";
 
 import CreatorProfile from "@/components/creator-profile";
 import CourseCard from "@/components/course-card";
-
 
 const allCoursesMockData = [
   {
@@ -88,7 +82,6 @@ const allCoursesMockData = [
   },
 ];
 
-
 const categories = [
   "All",
   "Featured",
@@ -123,12 +116,10 @@ export default function CreatorPage() {
     },
   };
 
-
   const handleCategoryChange = (category: string) => {
     setActiveCategory(category);
     setCurrentPage(1);
   };
-
 
   const filteredCourses = useMemo(() => {
     if (activeCategory === "All" || activeCategory === "Featured") {
@@ -136,10 +127,9 @@ export default function CreatorPage() {
     }
 
     return allCoursesMockData.filter(
-      (course) => course.category === activeCategory
+      (course) => course.category === activeCategory,
     );
   }, [activeCategory]);
-
 
   const totalPages = Math.ceil(filteredCourses.length / coursesPerPage);
 
@@ -149,7 +139,6 @@ export default function CreatorPage() {
 
     return filteredCourses.slice(startIndex, endIndex);
   }, [filteredCourses, currentPage]);
-
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
@@ -162,16 +151,12 @@ export default function CreatorPage() {
 
   return (
     <main className="relative min-h-screen w-full overflow-x-hidden bg-white">
-
       <CreatorProfile />
-
 
       <div className="flex w-full flex-col items-center bg-white px-4 py-10 sm:px-6 md:px-12 lg:px-24">
         <div className="flex w-full max-w-6xl flex-col gap-6">
-
           <div className="flex w-full flex-col items-center justify-between gap-4 border-b border-gray-100 pb-6 sm:flex-row">
             <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-
               <button
                 type="button"
                 className="flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-4 py-2 text-xs font-semibold text-gray-800 transition-colors hover:bg-gray-50 focus:outline-none sm:text-sm"
@@ -179,7 +164,6 @@ export default function CreatorPage() {
                 <SlidersHorizontal className="h-3.5 w-3.5 text-gray-500" />
                 Filter
               </button>
-
 
               <button
                 type="button"
@@ -189,7 +173,6 @@ export default function CreatorPage() {
                 Level
               </button>
 
-
               <button
                 type="button"
                 className="flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-4 py-2 text-xs font-semibold text-gray-800 transition-colors hover:bg-gray-50 focus:outline-none sm:text-sm"
@@ -198,7 +181,6 @@ export default function CreatorPage() {
                 Category
               </button>
             </div>
-
 
             <button
               type="button"
@@ -210,7 +192,6 @@ export default function CreatorPage() {
           </div>
         </div>
       </div>
-
 
       <div className="mx-auto w-full max-w-6xl px-4 pb-12 md:px-8">
         <AnimatePresence mode="popLayout">

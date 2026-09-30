@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState } from "react";
@@ -35,46 +34,41 @@ export default function RegisterPage() {
 
   return (
     <main className="relative min-h-screen w-full bg-[#0E52FE] bg-[linear-gradient(to_right,#1b5eff_1px,transparent_1px),linear-gradient(to_bottom,#1b5eff_1px,transparent_1px)] bg-[size:4rem_4rem] text-white flex items-center justify-center p-4 sm:p-8 lg:p-16 overflow-hidden">
-      
       <Link href="/">
-      <div className="absolute top-6 left-6 flex items-center gap-2 cursor-pointer z-50">
-              <Image
-                src="/images/logo.png"
-                alt="ByteSpace Logo"
-                width={24}
-                height={30}
-              />
-      
-              <Image
-                src="/images/ByteSpace.png"
-                alt="ByteSpace"
-                width={110}
-                height={110}
-                className="object-contain"
-              />
-            </div>
+        <div className="absolute top-6 left-6 flex items-center gap-2 cursor-pointer z-50">
+          <Image
+            src="/images/logo.png"
+            alt="ByteSpace Logo"
+            width={24}
+            height={30}
+          />
+
+          <Image
+            src="/images/ByteSpace.png"
+            alt="ByteSpace"
+            width={110}
+            height={110}
+            className="object-contain"
+          />
+        </div>
       </Link>
 
       <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center z-10 mt-12 lg:mt-0">
-
         <div className="lg:col-span-6 flex flex-col space-y-8">
-          
           <div className="space-y-5">
             <span className="text-[#CCFF00] font-bold text-sm tracking-wide uppercase">
               Sign up and come in
             </span>
 
             <p className="text-blue-100 text-sm max-w-md font-light opacity-90 leading-relaxed">
-              The registration process is straightforward, uncomplicated, and efficient, allowing users to sign up quickly, easily, and at no cost
+              The registration process is straightforward, uncomplicated, and
+              efficient, allowing users to sign up quickly, easily, and at no
+              cost
             </p>
           </div>
 
-
           <div className="relative w-full max-w-[450px] aspect-[4/3] hidden sm:block">
-
-
             <div className="absolute left-0 bottom-4 w-0 h-0 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-b-[60px] border-b-[#CCFF00] -rotate-12 select-none" />
-
 
             <motion.div
               variants={floatAnimation(0.5)}
@@ -162,9 +156,7 @@ export default function RegisterPage() {
 
                 <span className="text-[9px] text-amber-400">★</span>
 
-                <span className="text-[8px] text-gray-400">
-                  (240)
-                </span>
+                <span className="text-[8px] text-gray-400">(240)</span>
               </div>
 
               <div className="flex -space-x-1 mt-2">
@@ -182,7 +174,6 @@ export default function RegisterPage() {
             </motion.div>
           </div>
         </div>
-
 
         <div className="lg:col-span-6 flex justify-center lg:justify-end w-full">
           <motion.div
@@ -203,7 +194,6 @@ export default function RegisterPage() {
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-5">
-
               <div className="space-y-1.5">
                 <label
                   htmlFor="fullName"
@@ -227,7 +217,6 @@ export default function RegisterPage() {
                   className="rounded-xl h-11 border-gray-200 focus-visible:ring-1 focus-visible:ring-gray-300 px-4 text-sm w-full text-gray-900 placeholder:text-gray-300"
                 />
               </div>
-
 
               <div className="space-y-1.5">
                 <label
@@ -277,7 +266,6 @@ export default function RegisterPage() {
                   className="rounded-xl h-11 border-gray-200 focus-visible:ring-1 focus-visible:ring-gray-300 px-4 text-sm w-full text-gray-900 placeholder:text-gray-300 tracking-widest"
                 />
               </div>
-
 
               <div className="pt-4 flex flex-col items-end">
                 <Button

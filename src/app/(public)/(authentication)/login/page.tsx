@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState } from "react";
@@ -35,47 +34,42 @@ export default function LoginPage() {
 
   return (
     <main className="relative min-h-screen w-full bg-[#0E52FE] bg-[linear-gradient(to_right,#1b5eff_1px,transparent_1px),linear-gradient(to_bottom,#1b5eff_1px,transparent_1px)] bg-[size:4rem_4rem] text-white flex items-center justify-center p-4 sm:p-8 lg:p-16 overflow-hidden">
-
       <Link href="/">
-      <div className="absolute top-6 left-6 flex items-center gap-2 cursor-pointer z-50">
-        <Image
-          src="/images/logo.png"
-          alt="ByteSpace Logo"
-          width={24}
-          height={30}
-        />
+        <div className="absolute top-6 left-6 flex items-center gap-2 cursor-pointer z-50">
+          <Image
+            src="/images/logo.png"
+            alt="ByteSpace Logo"
+            width={24}
+            height={30}
+          />
 
-        <Image
-          src="/images/ByteSpace.png"
-          alt="ByteSpace"
-          width={110}
-          height={110}
-          className="object-contain"
-        />
-      </div>
+          <Image
+            src="/images/ByteSpace.png"
+            alt="ByteSpace"
+            width={110}
+            height={110}
+            className="object-contain"
+          />
+        </div>
       </Link>
 
       <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center z-10 mt-12 lg:mt-0">
-
         <div className="lg:col-span-6 flex flex-col space-y-8">
-
           <div className="space-y-5">
             <span className="text-[#CCFF00] font-bold text-sm tracking-wide uppercase">
               Sign up and come in
             </span>
 
             <p className="text-blue-100 text-sm max-w-md font-light opacity-90 leading-relaxed">
-              Experience a seamless and efficient sign-in process that grants you instant access to a world of knowledge.
+              Experience a seamless and efficient sign-in process that grants
+              you instant access to a world of knowledge.
             </p>
           </div>
 
           <div className="relative w-full max-w-[450px] aspect-[4/3] hidden sm:block">
-
-
             <div className="absolute left-0 bottom-4 w-0 h-0 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-b-[60px] border-b-[#CCFF00] -rotate-12 select-none" />
 
             <div className="absolute left-10 top-16 w-16 h-16 rounded-full border-[8px] border-[#CCFF00] -z-10" />
-
 
             <motion.div
               variants={floatAnimation(0.5)}
@@ -92,7 +86,6 @@ export default function LoginPage() {
                 $25/lifetime
               </span>
             </motion.div>
-
 
             <motion.div
               variants={floatAnimation(0)}
@@ -124,7 +117,6 @@ export default function LoginPage() {
               </div>
 
               <div className="flex items-center justify-between mt-4 pt-3 border-t border-gray-100">
-
                 <div className="flex -space-x-1.5">
                   {[1, 2, 3].map((i) => (
                     <div
@@ -179,14 +171,12 @@ export default function LoginPage() {
         </div>
 
         <div className="lg:col-span-6 flex justify-center lg:justify-end w-full">
-
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="w-full max-w-md bg-white rounded-[2.5rem] p-8 sm:p-10 shadow-2xl border border-blue-400/20 text-gray-900 flex flex-col"
           >
-
             <div className="space-y-1 mb-8">
               <span className="text-xs font-semibold text-blue-600 tracking-wide uppercase">
                 Sign In
@@ -197,11 +187,7 @@ export default function LoginPage() {
               </h2>
             </div>
 
-            <form
-              onSubmit={handleSubmit}
-              className="space-y-5"
-            >
-
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div className="space-y-1.5">
                 <label
                   htmlFor="email"
@@ -272,7 +258,6 @@ export default function LoginPage() {
             </div>
 
             <div className="flex justify-center gap-4">
-
               <button
                 type="button"
                 aria-label="Continue with Facebook"
@@ -319,7 +304,6 @@ export default function LoginPage() {
                 Forgot your password?
               </Link>
             </div>
-
           </motion.div>
         </div>
       </div>

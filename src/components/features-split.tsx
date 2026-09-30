@@ -2,7 +2,13 @@
 
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
-import { ArrowUpRight, CheckCircle2, Play, Sparkles, Users } from "lucide-react";
+import {
+  ArrowUpRight,
+  CheckCircle2,
+  Play,
+  Sparkles,
+  Users,
+} from "lucide-react";
 
 export default function FeaturesSplit() {
   const fadeInUp: Variants = {
@@ -75,8 +81,6 @@ export default function FeaturesSplit() {
       </div>
 
       <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-32 px-5 md:px-10 lg:px-16">
-       
-
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2 lg:gap-24">
           <motion.div
             initial="hidden"
@@ -85,16 +89,15 @@ export default function FeaturesSplit() {
             variants={fadeInLeft}
             className="flex flex-col"
           >
-
             <h2 className="text-[24px] lg:text-[40px] font-semibold">
-              Your Path to Professional <br/> Growth Starts Here.
+              Your Path to Professional <br /> Growth Starts Here.
             </h2>
 
             <p className="mt-7 max-w-xl text-base leading-8 text-gray-500 md:text-lg">
-              Explore our curated selection of courses tailored to enhance
-              your capabilities and accelerate your career journey. Build
-              practical skills, gain industry knowledge, and move confidently
-              toward your goals.
+              Explore our curated selection of courses tailored to enhance your
+              capabilities and accelerate your career journey. Build practical
+              skills, gain industry knowledge, and move confidently toward your
+              goals.
             </p>
 
             {/* Stats */}
@@ -195,9 +198,7 @@ export default function FeaturesSplit() {
                   Design Course
                 </span>
 
-                <span className="text-sm font-black text-[#0E52FE]">
-                  $25
-                </span>
+                <span className="text-sm font-black text-[#0E52FE]">$25</span>
               </div>
             </motion.div>
 
@@ -242,7 +243,6 @@ export default function FeaturesSplit() {
             </div>
           </motion.div>
         </div>
-
 
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2 lg:gap-24">
           {/* Visual */}
@@ -350,9 +350,8 @@ export default function FeaturesSplit() {
             variants={fadeInRight}
             className="order-1 flex flex-col lg:order-2"
           >
-
             <h2 className="text-[24px] lg:text-[40px] font-semibold">
-              Create & Manage <br/> Courses Easily.
+              Create & Manage <br /> Courses Easily.
             </h2>
 
             <p className="mt-7 max-w-xl text-base leading-8 text-gray-500 md:text-lg">
@@ -361,20 +360,23 @@ export default function FeaturesSplit() {
               and managing educational courses — all from one simple platform.
             </p>
 
-
-            <div className="flex flex-col space-y-4 pt-2"> 
-              {[ "Share Your Expertise", 
-                "Monetize Your Passion", 
-                "Flexibility and Autonomy", 
-                "Build a Community" ]
-                .map((text, index) => ( 
+            <div className="flex flex-col space-y-4 pt-2">
+              {[
+                "Share Your Expertise",
+                "Monetize Your Passion",
+                "Flexibility and Autonomy",
+                "Build a Community",
+              ].map((text, index) => (
                 // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-<div key={index} className="flex items-center gap-3"> <CheckCircle2 className="w-5 h-5 text-[#0E52FE] shrink-0" /> 
-                <span className="text-sm md:text-base font-semibold text-gray-700">{text}</span> 
-                </div> 
-              ))} 
+                <div key={index} className="flex items-center gap-3">
+                  {" "}
+                  <CheckCircle2 className="w-5 h-5 text-[#0E52FE] shrink-0" />
+                  <span className="text-sm md:text-base font-semibold text-gray-700">
+                    {text}
+                  </span>
                 </div>
-            
+              ))}
+            </div>
           </motion.div>
         </div>
       </div>

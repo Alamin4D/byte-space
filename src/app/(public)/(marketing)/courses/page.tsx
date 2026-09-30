@@ -1,4 +1,3 @@
-
 import CourseSearchFilter from "@/components/course-search-filter";
 
 export default function CoursesPage() {

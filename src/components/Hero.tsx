@@ -7,7 +7,6 @@ import { Input } from "@/components/ui/input";
 import Image from "next/image";
 
 export default function Hero() {
-
   const containerVariants: Variants = {
     hidden: {
       opacity: 0,
@@ -37,12 +36,10 @@ export default function Hero() {
 
   return (
     <section className="relative flex w-full flex-col justify-between overflow-hidden bg-[#0E52FE] px-4 pb-16 pt-28 text-white sm:px-6 md:pt-36 lg:px-8">
-
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#1b5eff_1px,transparent_1px),linear-gradient(to_bottom,#1b5eff_1px,transparent_1px)] bg-[size:4rem_4rem]"
       />
-
 
       <motion.div
         aria-hidden="true"
@@ -56,7 +53,6 @@ export default function Hero() {
         }}
         className="pointer-events-none absolute left-6 top-1/4 hidden h-20 w-20 rounded-full bg-[#CCFF00] opacity-80 blur-sm xl:block"
       />
-
 
       <motion.div
         aria-hidden="true"
@@ -73,16 +69,13 @@ export default function Hero() {
         ✦
       </motion.div>
 
-
       <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-grow flex-col items-center justify-center">
-
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
           className="flex w-full max-w-4xl flex-col items-center text-center"
         >
-
           <motion.h1
             variants={itemVariants}
             className="max-w-3xl text-3xl font-black leading-[1.15] tracking-tight sm:text-5xl sm:leading-tight lg:text-6xl"
@@ -104,7 +97,6 @@ export default function Hero() {
             onSubmit={(e) => e.preventDefault()}
             className="mt-8 flex w-full max-w-xl flex-col items-center gap-2 rounded-2xl border border-blue-400/20 bg-white p-2 shadow-2xl sm:mt-10 sm:flex-row sm:rounded-full"
           >
-
             <div className="flex w-full items-center pl-3 pr-2 text-gray-400">
               <Search
                 aria-hidden="true"
@@ -119,7 +111,6 @@ export default function Hero() {
               />
             </div>
 
-
             <Button
               type="submit"
               className="h-11 w-full shrink-0 rounded-xl bg-[#CCFF00] px-8 text-sm font-bold text-black shadow-sm transition-all duration-200 hover:bg-[#b0dc00] sm:w-auto sm:rounded-full sm:text-base"
@@ -128,7 +119,6 @@ export default function Hero() {
             </Button>
           </motion.form>
         </motion.div>
-
 
         <motion.div
           initial={{
@@ -148,12 +138,10 @@ export default function Hero() {
           }}
           className="relative sm:mt-16 w-full max-w-[340px] sm:max-w-[460px] lg:max-w-[520px] aspect-square flex flex-col justify-end items-center mx-auto"
         >
-
           <div
             aria-hidden="true"
             className="absolute bottom-0 left-1/2 -z-10 w-[160%] h-[160%] aspect-square -translate-x-1/2 translate-y-[60%] rounded-full bg-[#CCFF00]"
           />
-
 
           <div className="relative z-10 w-full h-full flex items-end justify-center">
             <Image
@@ -165,7 +153,6 @@ export default function Hero() {
               className="object-contain object-bottom scale-105 translate-12"
             />
           </div>
-
 
           <motion.div
             animate={{
@@ -188,7 +175,6 @@ export default function Hero() {
               </span>
             </div>
           </motion.div>
-
 
           <motion.div
             animate={{
@@ -213,7 +199,6 @@ export default function Hero() {
               <div className="h-full w-[55%] rounded-full bg-[#0E52FE]" />
             </div>
           </motion.div>
-
 
           <motion.div
             animate={{
@@ -245,7 +230,6 @@ export default function Hero() {
                 (240)
               </span>
             </div>
-
 
             <div className="mt-2 flex -space-x-1.5 overflow-hidden">
               {[1, 2, 3].map((student) => (
