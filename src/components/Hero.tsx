@@ -241,7 +241,6 @@ export default function Hero() {
               >
                 ★
               </span>
-
               <span className="text-[8px] text-gray-400 sm:text-[10px]">
                 (240)
               </span>
