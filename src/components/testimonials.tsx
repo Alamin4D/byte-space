@@ -59,6 +59,7 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="text-[24px] lg:text-[40px] tracking-tight text-gray-900 leading-tight"
         >
+          
           Discover What Our <br /> Community Is Saying
         </motion.h2>
         
