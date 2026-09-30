@@ -7,7 +7,7 @@ Welcome to **ByteSpace New**, a modern, high-performance, and pixel-perfect educ
 ## 🔗 Project Links
 - **Live Vercel URL:** [Deploy URL Here] *(আপনার ভার্সেল লাইভ লিংকটি এখানে বসিয়ে দিন)*
 - **GitHub Repository:** [Your Repo Link Here] *(আপনার গিটহাব লিংকটি এখানে দিন)*
-- **Pull Request (PR):** [Your PR Link Here] *(আপনার তৈরি করা পিআর লিংকটি এখানে দিন)*
+- **Pull Request (PR):** https://github.com/Alamin4D/byte-space/pull/1
 
 ---
 

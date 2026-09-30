@@ -7,6 +7,7 @@ import Image from "next/image";
 export default function CreatorProfile() {
   const [isFollowing, setIsFollowing] = useState(false);
 
+  
   return (
     <section className="w-full bg-[#0E52FE] bg-[linear-gradient(to_right,#1b5eff_1px,transparent_1px),linear-gradient(to_bottom,#1b5eff_1px,transparent_1px)] bg-[size:4rem_4rem] text-white pt-32 pb-20 px-4 sm:px-6 md:px-12 lg:px-24 flex flex-col items-center justify-start overflow-hidden select-none">
       
