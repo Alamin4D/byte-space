@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ByteSpace New - Frontend Assessment Project
 
-## Getting Started
+Welcome to **ByteSpace New**, a modern, high-performance, and pixel-perfect educational landing page engineered for the **Jr. Software Engineer (Frontend)** position assessment at **Doin Tech Limited**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔗 Project Links
+- **Live Vercel URL:** [https://byte-space-dusky.vercel.app/]
+- **GitHub Repository:** [https://github.com/Alamin4D/byte-space]
+- **Pull Request (PR):** [https://github.com/Alamin4D/byte-space/pull/1]
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack & Architecture
+This project is built using a production-ready modern frontend stack to ensure type safety, modular component reusability, and stellar performance:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework:** [Next.js 14/15 (App Router)](https://nextjs.org)
+- **Language:** [TypeScript](https://typescriptlang.org) (Strict type checking enabled)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com) (Utility-first, responsive grid setups)
+- **UI Components:** [Base UI / shadcn/ui boilerplate](https://base-ui.com)
+- **Animations:** [Framer Motion](https://framer.com) (Smooth staggered and floating physics)
+- **Icons:** [Lucide React](https://lucide.dev)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Features Implemented
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1. Core Requirements (Pixel-Perfect Landing Page)
+- **Responsive Navigation Bar:** Features an adaptive layout with a high-fidelity hidden slide-out drawer menu for mobile and tablet devices, built natively with Base UI/shadcn structures.
+- **Hero & Trust Sections:** Interactive text layout and dynamic floating element cards aligned around a centralized asset graphics model, followed immediately by a grayscale company logos container banner.
+- **Dynamic Learning Paths Grid:** Modular component nodes with customized layout scale physics on interaction states.
+- **Advanced Course Search Engine:** Complete with real-time text input queries matching course names or creator studios, active interactive category pill triggers, and dynamic calculated pagination page index switching.
+- **Split Stats Showcases:** Complex 2-column flexbox setups layering text lists, progress tracking indicators, and volumetric avatar blocks that refactor gracefully across break-points without overflowing bounds.
+- **Testimonials & Footer:** Client opinion layout models paired with an inline newsletter validation component.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 2. Extra Credits (Bonus Content)
+- **Authentication Flows:** Seamless, error-free client register/sign-up and login screen modules equipped with full social OAuth button layouts.
+- **Custom Error Route:** Tailored `not-found.tsx` 404 handler featuring text-clipping gradient masks matching the core brand specifications.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ⚡ Technical Highlights & Best Practices Followed
+- **No Console Errors:** Completely resolved nested block violations (e.g., HTML `<button>` inside `<button>` nesting bugs) and eliminated Next.js link depreciation warnings by adopting modern framework wrappers.
+- **Hydration Safe Architecture:** Built without hardcoded client mismatches, assuring smooth server-side compilation bounds.
+- **Git Branching Compliance:** Strictly avoided direct code additions into `main` or `master`. All updates were isolated onto the `feature/landing-page` branch, and submitted transparently via a clean Pull Request tracker.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🚀 Getting Started (Local Development)
+
+Follow these steps to run the ByteSpace application locally on your computer:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com
+   cd byte-space
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. **Run the local development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the live app.
+
+---
+
+## ✉️ Contact Information
+- **Applicant:** Md Alamin Ahmed
+- **Tracking ID:** `1dfa787e-97c1-4e48-8cda-28c36a395db6`
+- **Phone:** `01778911386`
+
+*Thank you for reviewing my frontend software engineering assessment submission!*
