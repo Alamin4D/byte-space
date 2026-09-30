@@ -291,6 +291,7 @@ export default function CourseSearchFilter() {
           </motion.div>
         </div>
       </div>
+      
 
       <div className="w-full max-w-6xl px-4 md:px-8 pb-12">
         <AnimatePresence mode="popLayout">
