@@ -368,7 +368,8 @@ export default function FeaturesSplit() {
                 "Flexibility and Autonomy", 
                 "Build a Community" ]
                 .map((text, index) => ( 
-                <div key={index} className="flex items-center gap-3"> <CheckCircle2 className="w-5 h-5 text-[#0E52FE] shrink-0" /> 
+                // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+<div key={index} className="flex items-center gap-3"> <CheckCircle2 className="w-5 h-5 text-[#0E52FE] shrink-0" /> 
                 <span className="text-sm md:text-base font-semibold text-gray-700">{text}</span> 
                 </div> 
               ))} 
